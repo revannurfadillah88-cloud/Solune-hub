@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080d">
+  <meta name="description" content="Solune_Hub - pusat link Solune">
+  <title>Solune_Hub</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      background:
+        radial-gradient(circle at 50% -10%, #633cff55, transparent 38%),
+        radial-gradient(circle at 100% 100%, #3b238040, transparent 35%),
+        #08080d;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 520px;
+      margin: auto;
+      padding: 55px 0 25px;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      margin: auto;
+      border-radius: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 42px;
+      font-weight: 900;
+
+      background: linear-gradient(135deg, #a083ff, #5634d9);
+
+      box-shadow:
+        0 0 30px #704cff66,
+        inset 0 1px 1px #ffffff55;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 23px;
+    }
+
+    .header h1 {
+      font-size: clamp(32px, 9vw, 46px);
+      letter-spacing: -2px;
+
+      background: linear-gradient(
+        90deg,
+        #ffffff,
+        #c9bfff,
+        #ffffff
+      );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .header p {
+      margin-top: 9px;
+      color: #9999a8;
+      font-size: 14px;
+    }
+
+    .links {
+      margin-top: 34px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-card {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      padding: 13px 16px;
+
+      color: white;
+      text-decoration: none;
+
+      border-radius: 21px;
+      border: 1px solid rgba(255,255,255,.09);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.075),
+          rgba(255,255,255,.025)
+        );
+
+      box-shadow:
+        0 12px 35px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.04);
+
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+
+      transition: .2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      border-color: #9678ff66;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(130,100,255,.13),
+          rgba(255,255,255,.035)
+        );
+    }
+
+    .link-card:active {
+      transform: scale(.975);
+    }
+
+    .icon {
+      width: 49px;
+      height: 49px;
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 16px;
+      font-size: 25px;
+
+      background: rgba(255,255,255,.075);
+    }
+
+    .link-info {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .link-title {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .link-description {
+      display: block;
+      margin-top: 4px;
+      color: #92929f;
+      font-size: 12px;
+    }
+
+    .arrow {
+      color: #777783;
+      font-size: 27px;
+    }
+
+    .more {
+      margin-top: 14px;
+      padding: 19px;
+
+      text-align: center;
+
+      border-radius: 20px;
+      border: 1px dashed rgba(255,255,255,.12);
+
+      color: #6f6f7b;
+      background: rgba(255,255,255,.018);
+    }
+
+    .more strong {
+      display: block;
+      color: #92929e;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .more span {
+      font-size: 11px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 45px;
+      padding-bottom: 12px;
+
+      color: #595965;
+      font-size: 11px;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 6px;
+      color: #454550;
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        padding-top: 38px;
+      }
+
+      .logo {
+        width: 76px;
+        height: 76px;
+        font-size: 36px;
+      }
+
+      .link-card {
+        min-height: 70px;
+      }
+
+      .icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="logo">S</div>
+
+    <header class="header">
+      <h1>Solune_Hub</h1>
+      <p>Satu tempat untuk semua link Solune.</p>
+    </header>
+
+    <section class="links">
+
+      <a
+        class="link-card"
+        href="https://whatsapp.com/channel/0029Vb8c0woJpe8l2DPuQq2T"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icon">💬</div>
+
+        <div class="link-info">
+          <span class="link-title">Saluran WhatsApp</span>
+          <span class="link-description">
+            Ikuti update terbaru Solune
+          </span>
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+      <div class="more">
+        <strong>More Links Soon</strong>
+        <span>Link lainnya akan hadir di sini.</span>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Solune_Hub
+      <span>Made with ✦ for Solune</span>
+    </footer>
+
+  </main>
+
+</body>
+  </html>
